@@ -1,6 +1,5 @@
 package pilhaDinamica;
 
-import static java.awt.SystemColor.info;
 
 public class Pilha {
     int tamanho;
