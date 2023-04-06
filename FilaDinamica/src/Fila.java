@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class Fila {
     int tamanho;
     No inicio;
@@ -17,7 +19,7 @@ public class Fila {
     void enfileirar(Object info){
         No no = new No(info);
 
-        if (estaVazia() == false){
+        if (estaVazia()){
             this.inicio = no;
         }
         else{
@@ -30,12 +32,14 @@ public class Fila {
 
     Object desenfileirar() {
         if (estaVazia()) {
-            System.out.println("Fila vazia!");
+            JOptionPane.showMessageDialog(null, "Fila vazia!");
             return null;
         } else {
             Object info = this.inicio.info;
             this.inicio = this.inicio.prox;
             this.tamanho--;
+
+            JOptionPane.showMessageDialog(null, "Retirado da Fila!");
 
             return info;
         }
@@ -43,7 +47,7 @@ public class Fila {
 
     Object inicio(){
             if (estaVazia()){
-                System.out.println("Fila vazia!");
+                JOptionPane.showMessageDialog(null, "Fila vazia!");
                 return null;
             }
             else{
@@ -51,6 +55,15 @@ public class Fila {
             }
         }
 
+    String mostrarFila() {
+        String tarefas = "";
+        No noAtual = inicio;
+        for (int i = 0; i < tamanho; i++) {
+                tarefas += noAtual.info + "\n";
+                noAtual = noAtual.prox;
+        }
+        return tarefas;
+    }
 
     }
 

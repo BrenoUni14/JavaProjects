@@ -12,6 +12,7 @@ public class Main {
                             + "\n1 - Enfileirar"
                             + "\n2 - Início"
                             + "\n3 - Desenfileirar"
+                            + "\n4 - Toda Fila"
                             + "\n0 - Sair")
             );
             switch (op){
@@ -22,8 +23,15 @@ public class Main {
                     break;
 
                 case 2:
-                    String tarefaInicio = (String) fila.inicio();
-                    JOptionPane.showMessageDialog(null, tarefaInicio);
+                    JOptionPane.showMessageDialog(null, fila.inicio());
+                    break;
+
+                case 3:
+                    fila.desenfileirar();
+                    break;
+
+                case 4:
+                    JOptionPane.showMessageDialog(null, fila.mostrarFila());
                     break;
 
                 default:
