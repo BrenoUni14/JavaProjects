@@ -20,8 +20,11 @@ public class Main {
                     String tarefa = JOptionPane.showInputDialog("Digite a tarefa: ");
                     fila.enfileirar(tarefa);
                     break;
-                case 2:
 
+                case 2:
+                    String tarefaInicio = (String) fila.inicio();
+                    JOptionPane.showMessageDialog(null, tarefaInicio);
+                    break;
 
                 default:
                     System.out.println("Opção inválida!");
