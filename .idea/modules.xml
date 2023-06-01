@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FilaDinamica/FilaDinamica.iml" filepath="$PROJECT_DIR$/FilaDinamica/FilaDinamica.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Grafos/Grafos.iml" filepath="$PROJECT_DIR$/Grafos/Grafos.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaProjects.iml" filepath="$PROJECT_DIR$/.idea/JavaProjects.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaTests/JavaTests.iml" filepath="$PROJECT_DIR$/JavaTests/JavaTests.iml" />
       <module fileurl="file://$PROJECT_DIR$/PilhaDinamica/PilhaDinamica.iml" filepath="$PROJECT_DIR$/PilhaDinamica/PilhaDinamica.iml" />
